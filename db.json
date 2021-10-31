@@ -7,29 +7,7 @@
       "id": 1
     }
   ],
-  "history": [
-    {
-      "products": [],
-      "userId": 1,
-      "date": "date",
-      "id": 1
-    },
-    {
-      "products": [
-        {
-          "productId": 1,
-          "quantity": 1
-        },
-        {
-          "productId": 2,
-          "quantity": 1
-        }
-      ],
-      "userId": 1,
-      "date": "date",
-      "id": 2
-    }
-  ],
+  "history": [],
   "products": [
     {
       "name": "Burger",
