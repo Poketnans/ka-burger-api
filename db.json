@@ -24,6 +24,15 @@
       "storage": 50,
       "userId": 1,
       "id": 2
+    },
+    {
+      "name": "Burger-Super",
+      "price": 16.99,
+      "description": "A delicious food",
+      "storage": 50,
+      "image": "url",
+      "userId": 1,
+      "id": 3
     }
   ]
 }

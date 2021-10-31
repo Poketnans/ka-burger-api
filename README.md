@@ -1,19 +1,15 @@
-# ka-burger-api
+<h1 align="center" >API KA Burger</h1>
 
 API criada para realização da entrega "5A12 - Entrega - Hamburgueria 2.0 - com TypeScript e JSON Server" do curso de fullstack na Kenzie Academy
 
-<h1 align="center" >API Personal Controler Sheet</h1>
-
-Esse é o repositório da API Personal Controler Sheet, baseada em JSON-Server + JSON-Server-Auth.
-
-A API Personal Controler Sheet visa auxiliar aplicações voltadas para o gerencimento pessoal de rotinas.
+Este é o repositório da API KA Burger, baseada em JSON-Server + JSON-Server-Auth.
 
 <hr/>
 
 ## **Tecnologias envolvidas**
 
 - Node.js
-- Heroku
+- Heroku Deployer
 - Json Server
 - Json Server Auth
 
@@ -51,7 +47,8 @@ Status 201 Created
   "user": {
     "email": "email cadastrado",
     "password": "senha encriptada",
-    "id": "id do usuário"
+    "id": "id do usuário",
+    "name": "nome cadastrado"
   }
 }
 ```
@@ -85,18 +82,18 @@ Status 200 OK
   "user": {
     "email": "email cadastrado",
     "password": "senha encriptada",
-    "id": "id do usuário"
-  }id": number
+    "id": "id do usuário",
+    "name": "nome cadastrado"
   }
 }
 ```
 
-## **Listando Grupos**
+## **Listando Produtos**
 
 ### Endpoint:
 
 ```
-GET /groups
+GET /products
 ```
 
 ### formato da resposta:
@@ -108,17 +105,14 @@ Status 200 OK
 ```json
 [
   {
-    "name": "nome do grupo",
-    "category": "categoria do grupo",
-    "userId": "id do criador",
-    "id": "id do grupo"
+    "id": "id do grupo",
+    "name": "nome do produto",
+    "description": "descrição do produto",
+    "price": "preço (number)",
+    "storage": "quantidade em estoque (number)",
+    "userId": "id do criador"
   },
-  {
-    "name": "nome do grupo",
-    "category": "categoria do grupo",
-    "userId": "id do criador",
-    "id": "id do grupo"
-  }
+  {...}
 ]
 ```
 
@@ -159,26 +153,28 @@ Status 200 OK
   "frequency": "frequência de atividade",
   "userId": "id do usuário",
   "id": "id do hobbie",
-  "groups": [],
-  "hobbies": [],
-  "routines": []
+  "history": [],
+  "products": []
 }
 ```
 
-## **Criando Hobbies**
+## **Criando Produtos**
 
 ### Endpoint:
 
 ```
-POST /hobbies
+POST /products
 ```
 
 ### Body:
 
 ```json
 {
-  "name": "nome do hobbie",
-  "frequency": "frequência de atividade",
+  "name": "nome do produto",
+  "price": "preço do produto (number)",
+  "description": "Descrição do produto",
+  "storage": "Quantidade em estoque (number)",
+  "image": "url da imagem",
   "userId": "id do usuário"
 }
 ```
@@ -191,28 +187,40 @@ Status 201 Created
 
 ```json
 {
-  "name": "nome do hobbie",
-  "frequency": "frequência de atividade",
-  "userId": "id do usuário",
-  "id": "id do hobbie"
+  "name": "nome do produto",
+  "price": "preço do produto (number)",
+  "description": "Descrição do produto",
+  "storage": "Quantidade em estoque (number)",
+  "image": "url da imagem",
+  "userId": "id do usuário"
 }
 ```
 
-## **Criando Grupos**
+## **Alimentando o histórico de compras**
 
 ### Endpoint:
 
 ```
-POST /groups
+POST /history
 ```
 
 ### Body:
 
 ```json
 {
-  "name": "nome do grupo",
-  "category": "categoria do grupo",
-  "userId": "id do criador"
+  "userId": "id do usuário",
+  "date": "data da compra",
+  "products": [
+    {
+      "productId": "id do produto 1",
+      "quantity": "quantidade"
+    },
+    {
+      "productId": "id do produto 2",
+      "quantity": "quantidade"
+    },
+    {...}
+  ]
 }
 ```
 
@@ -224,48 +232,18 @@ Status 201 Created
 
 ```json
 {
-  "name": "nome do grupo",
-  "category": "categoria do grupo",
-  "userId": "id do criador",
-  "id": "id do grupo"
-}
-```
-
-## **Criando Rotinas**
-
-### Endpoint:
-
-```
-POST /routines
-```
-
-### Body:
-
-```json
-{
-  "name": "nome do grupo",
-  "category": "categoria do grupo",
-  "starts": "Horário de início",
-  "ends": "Horário de fim",
-  "frequency": "frequência da rotina",
-  "userId": "id do usuário"
-}
-```
-
-### Formato da resposta:
-
-```json
-Status 201 Created
-```
-
-```json
-{
-  "name": "nome do grupo",
-  "category": "categoria do grupo",
-  "starts": "Horário de início",
-  "ends": "Horário de fim",
-  "frequency": "frequência da rotina",
   "userId": "id do usuário",
-  "id": "id da rotina"
+  "date": "data da compra",
+  "products": [
+    {
+      "productId": "id do produto 1",
+      "quantity": "quantidade"
+    },
+    {
+      "productId": "id do produto 2",
+      "quantity": "quantidade"
+    },
+    {...}
+  ]
 }
 ```
