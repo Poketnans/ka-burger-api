@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "email": "email@email.com",
+      "password": "$2a$10$N/8bIIy.9zRRgoAmFNqfG.BKbArD0BOkw.Csf7q2LMxTvqyGmKqUi",
+      "name": "Poket Monsters",
+      "id": 1
+    }
+  ],
+  "history": [
+    {
+      "products": [],
+      "userId": 1,
+      "date": "date",
+      "id": 1
+    },
+    {
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "userId": 1,
+      "date": "date",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Burger",
+      "price": 12.99,
+      "description": "A delicious food",
+      "storage": 50,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Burger-Super",
+      "price": 16.99,
+      "description": "A delicious food",
+      "storage": 50,
+      "userId": 1,
+      "id": 2
+    }
+  ]
+}
