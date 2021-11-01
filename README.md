@@ -247,3 +247,22 @@ Status 201 Created
   ]
 }
 ```
+
+<br/>
+<hr/>
+<h2 align="center" >Possíveis erros</h2>
+
+
+### Status 403
+```
+Causa: Sessão expirada
+
+Message: "jwt expired"
+```
+
+
+
+
+
+
+
