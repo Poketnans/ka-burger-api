@@ -14,6 +14,8 @@
       "name": "Hamburguer",
       "category": "Sanduíches",
       "price": 7.99,
+      "storage": 50,
+      "userId": 1,
       "image": "https://image.freepik.com/fotos-gratis/cheeseburger-delicioso_1232-503.jpg"
     },
     {
@@ -21,6 +23,8 @@
       "name": "X-Burguer",
       "category": "Sanduíches",
       "price": 8.99,
+      "storage": 50,
+      "userId": 1,
       "image": "https://image.freepik.com/fotos-gratis/saboroso-hamburguer-de-carne-com-queijo-e-salada-de-frente-no-fundo-escuro_140725-89597.jpg"
     },
     {
@@ -28,6 +32,8 @@
       "name": "X-Salada",
       "category": "Sanduíches",
       "price": 10.99,
+      "storage": 50,
+      "userId": 1,
       "image": "https://image.freepik.com/fotos-gratis/hamburger-com-queijo-alface-e-tomates_1232-504.jpg"
     },
     {
@@ -35,6 +41,8 @@
       "name": "Big Kenzie",
       "category": "Sanduíches",
       "price": 16.99,
+      "storage": 50,
+      "userId": 1,
       "image": "https://image.freepik.com/fotos-gratis/vista-lateral-duplo-cheeseburger-com-rissois-de-carne-grelhada-queijo-e-folha-de-alface-entre-bolos-de-hamburguer_141793-4883.jpg"
     },
     {
@@ -42,6 +50,8 @@
       "name": "Guaraná",
       "category": "Bebidas",
       "price": 4.99,
+      "storage": 50,
+      "userId": 1,
       "image": "https://userscontent2.emaze.com/images/d989003f-f8a5-43d1-96e8-0428d6d0e6f0/94be298df809e29309451f6cc3049ced.png"
     },
     {
@@ -49,6 +59,8 @@
       "name": "Coca",
       "category": "Bebidas",
       "price": 4.99,
+      "storage": 50,
+      "userId": 1,
       "image": "http://bk-emea-prd.s3.amazonaws.com/sites/burgerking.pt/files/300x270-COLA_0.png"
     },
     {
@@ -56,6 +68,8 @@
       "name": "Fanta",
       "category": "Bebidas",
       "price": 4.99,
+      "storage": 50,
+      "userId": 1,
       "image": "https://img2.gratispng.com/20180421/voq/kisspng-orange-soft-drink-fanta-fizzy-drinks-orange-juice-juice-cup-5adbde6cdfb173.5397134215243587649163.jpg"
     }
   ]
